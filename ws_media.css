@@ -14,12 +14,14 @@
 */
 
 /* VideoPlayer Styles */
+/* The video element was edited to display as a block and have a width of 90% with a margin of 5px on the top and bottom and have the left and right be set to auto. */
 video {
     display: block;
     width: 90%;
     margin: 5px auto 5px auto;
 }
 
+/* Added in a media query that will be set to the only screen and have a min-width of 521px. Within the media query the video element was targeted to have a width of 360px, float right, and have a margin of 10px. */
 @media only screen and (min-width: 521px) {
     video {
         width: 360px;
@@ -29,8 +31,10 @@ video {
 }
 
 /* Track Styles */
+/* Created a style rule for caption cues that displayed the text in 1.3em sans-serif font with a text color of rgb that set the color to look a little pink and changed the background with rgba that looks a little gray. */
 ::cue {
-    font: 1.3em sans-serif;
+    font: 1.3em;
+    font-family: sans-serif;
     color: rgb(221, 128, 160);
     background-color: rgba(255, 255, 255, 0.8);
 }
